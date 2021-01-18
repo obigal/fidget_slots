@@ -549,19 +549,19 @@ void displayStats(int won) {
 }
 
 void displayLogo() {
-  char fy = -46;
-  char sy = -26;
+  char fy = -48;
+  char sy = -28;
   for (uint8_t i = 0; i < HEIGHT; i++) {
     arduboy.clear();
     arduboy.setTextColor(WHITE);
-    arduboy.setCursor(32, fy);
+    arduboy.setCursor(28, fy);
     arduboy.setTextSize(2);
     arduboy.print(F("FIDGET"));
-    arduboy.setCursor(38, sy);
+    arduboy.setCursor(34, sy);
     arduboy.print(F("SLOTS"));
     arduboy.display();
     fy += 1;
     sy += 1;
-    arduboy.delayShort(10);
+    arduboy.delayShort(20);
   }
 }
